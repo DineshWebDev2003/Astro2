@@ -232,7 +232,7 @@ export default function RegisterScreen() {
           <View style={styles.header}>
             <View style={styles.logoContainer}>
               <Image 
-                source={require('@/assets/images/logo-astromind.png')} 
+                source={require('@/assets/images/logo-astromind.jpg')} 
                 style={{ width: 80, height: 80, borderRadius: 40 }} 
                 resizeMode="contain"
               />
