@@ -4,11 +4,11 @@
     "slug": "frontend",
     "version": "1.0.1",
     "orientation": "portrait",
-    "icon": "./assets/images/icon-astro-tamil.png",
+    "icon": "./assets/images/icon-astro-tamil.jpg",
     "scheme": "frontend",
     "userInterfaceStyle": "dark",
     "splash": {
-      "image": "./assets/images/splash-astro-tamil.png",
+      "image": "./assets/images/splash-astro-tamil.jpg",
       "resizeMode": "contain",
       "backgroundColor": "#000000"
     },
@@ -18,7 +18,7 @@
     "android": {
       "adaptiveIcon": {
         "backgroundColor": "#000000",
-        "foregroundImage": "./assets/images/icon-astro-tamil.png",
+        "foregroundImage": "./assets/images/icon-astro-tamil.jpg",
         "backgroundImage": "./assets/images/android-icon-background.png",
         "monochromeImage": "./assets/images/android-icon-monochrome.png"
       },
