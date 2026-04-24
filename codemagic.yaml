@@ -26,6 +26,10 @@ workflows:
           chmod +x gradlew
           # This builds the final signed production APK
           ./gradlew assembleRelease
+      - name: Print Fingerprints for Firebase
+        script: |
+          echo "--- Android Fingerprints ---"
+          keytool -list -v -keystore $CM_KEYSTORE_PATH -alias $CM_KEYSTORE_ALIAS -storepass $CM_KEYSTORE_PASSWORD -keypass $CM_KEYSTORE_PASSWORD | grep -E "SHA1|SHA256" || echo "Release fingerprints not available (Check signing settings)"
     artifacts:
       - frontend/android/app/build/outputs/apk/release/*.apk
     publishing:
@@ -57,6 +61,10 @@ workflows:
           cd frontend/android
           chmod +x gradlew
           ./gradlew assembleDebug
+      - name: Print Fingerprints for Firebase (Debug)
+        script: |
+          echo "--- Debug Fingerprints ---"
+          keytool -list -v -keystore ~/.android/debug.keystore -alias androiddebugkey -storepass android -keypass android | grep -E "SHA1|SHA256" || echo "Debug fingerprints not found"
     artifacts:
       - frontend/android/app/build/outputs/apk/debug/*.apk
     publishing:
