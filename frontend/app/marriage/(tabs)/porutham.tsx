@@ -130,7 +130,7 @@ export default function PoruthamForm() {
                 <View style={[styles.profileCard, { borderColor: 'rgba(212, 175, 55, 0.2)' }]}>
                     <View style={styles.profileHeader}>
                         <View style={[styles.avatarBorder, { borderColor: Branding.gold }]}>
-                            <Image source={require('@/assets/images/indian_bride.png')} style={styles.avatar} />
+                            <Image source={require('@/assets/images/indian_bride.jpg')} style={styles.avatar} />
                         </View>
                         <View style={[styles.profileText, { marginLeft: 15 }]}>
                             <Text style={[styles.roleTitle, { color: themeColors.text }]}>Bride Details</Text>
@@ -176,7 +176,7 @@ export default function PoruthamForm() {
                 <View style={[styles.profileCard, { borderColor: 'rgba(212, 175, 55, 0.2)' }]}>
                     <View style={styles.profileHeader}>
                         <View style={[styles.avatarBorder, { borderColor: Branding.gold }]}>
-                            <Image source={require('@/assets/images/indian_groom.png')} style={styles.avatar} />
+                            <Image source={require('@/assets/images/indian_groom.jpg')} style={styles.avatar} />
                         </View>
                         <View style={[styles.profileText, { marginLeft: 15 }]}>
                             <Text style={[styles.roleTitle, { color: themeColors.text }]}>Groom Details</Text>

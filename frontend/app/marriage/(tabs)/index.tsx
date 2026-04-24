@@ -17,7 +17,7 @@ const { width } = Dimensions.get('window');
 const MARRIAGE_SERVICES = [
     { name: 'Palmistry', img: require('@/assets/images/palm.png'), desc: 'Analyze Bond' },
     { name: 'Compatibility', img: require('@/assets/images/marriage_header.png'), desc: 'Divine Match' },
-    { name: 'Divine Chat', img: require('@/assets/images/stars_bg.png'), desc: 'Consult Mai' }
+    { name: 'Divine Chat', img: require('@/assets/images/stars_bg.jpg'), desc: 'Consult Mai' }
 ];
 
 export default function MarriageHome() {
